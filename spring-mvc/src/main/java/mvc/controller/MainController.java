@@ -13,6 +13,8 @@ public class MainController {
 
     @RequestMapping(value = {"/"})
     public String print(Model model){
+        model.addAttribute("Title","Server page");
+        model.addAttribute("END","Hello from mvc module");
         return "index";
     }
 }
